@@ -1,33 +1,42 @@
-// .modal {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     width: 528px;
-//     height: 581px;
-//     padding: 40px;
-//     background-color: rgb(255, 255, 255);
-// }
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    width: calc(100% - 30px);
+    height: 609px;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+}
 
-// .modal__close-btn {
-//     position: absolute;
-//     top: 8px;
-//     right: 8px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 30px;
-//     height: 30px;
-//     border-radius: 50%;
-//     padding: 0;
-//     background-color: transparent;
-//     border: 1px solid rgba(0, 0, 0, 0.1);
-//     cursor: pointer;
-//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-//     &:focus,
-//     &:hover {
-//         fill: var(--accent-color);
-//     }
+    &:focus,
+    &:hover {
+        fill: var(--accent-color);
+    }
 
-// }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        max-width: 528px;
+        height: 581px;
+        padding: 40px;
+    }
+}

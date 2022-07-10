@@ -1,40 +1,62 @@
-// .our-advantages {
-//     display: flex;
-//     align-items: center;
-// }
+.our-advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
 
-// .our-advantades__item {
-//     width: 270px;
+.our-advantades__item {
+    width: 100%;
+    max-width: 450px;
+}
 
-//     &:not(:last-child) {
-//         margin-right: 30px;
-//     }
-// }
+.our-advantades__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    background: var(--background-color-light-theme);
+    border-radius: 4px;
+}
 
-// .our-advantades__box {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 270px;
-//     height: 120px;
-//     background: var(--background-color-light-theme);
-//     border-radius: 4px;
-// }
+.our-advantages__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secomdary-text-color-light-theme);
+    margin-top: 30px;
+    text-align: center;
+}
 
-// .our-advantages__title {
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     color: var(--secomdary-text-color-light-theme);
-//     margin-top: 30px;
-// }
+.our-advantages__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primery-text-color-light-theme);
+    margin-top: 10px;
+}
 
-// .our-advantages__text {
-//     font-size: 14px;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-//     color: var(--primery-text-color-light-theme);
-//     margin-top: 10px;
-// }
+@media screen and (min-width: 768px) {
+    .our-advantages {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    .our-advantades__item {
+        width: 354px;
+    }
+
+    .our-advantages__title {
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .our-advantades__item {
+        width: 270px;
+    }
+}

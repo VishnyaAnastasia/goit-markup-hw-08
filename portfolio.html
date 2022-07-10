@@ -17,43 +17,93 @@
 </head>
 
 <body>
-<!--
-    <header class="header">
-        <div class="container header__container">
-            <a class="logo" href="./index.html" lang="en">Web<span class="logo__dark">Studio</span>
-            </a>
-            <nav>
-                <ul class="nav">
-                    <li class="nav__item">
-                        <a class="nav__link " href="./index.html">Студия</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link nav__link_active" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="contacts">
-                <li class="contacts__item">
-                    <a class="contacts__link" href="mailto:info@devstudio.com">
-                        <svg class="contacts__icon" width="16" height="12">
-                            <use href="./images/sprite.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
+<!--Шапка профиля-->
+
+<header class="header">
+    <div class="container header__container">
+        <a class="logo header__logo" href="./index.html" lang="en">Web<span class="logo__dark">Studio</span>
+        </a>
+        <nav>
+            <ul class="nav">
+                <li class="nav__item">
+                    <a class="nav__link" href="./index.html">Студия</a>
                 </li>
-                <li class="contacts__item">
-                    <a class="contacts__link" href="tel:+380961111111">
-                        <svg class="contacts__icon" width="10" height="16">
-                            <use href="./images/sprite.svg#phone"></use>
-                        </svg> +38 096 111 11 11</a>
+                <li class="nav__item">
+                    <a class="nav__link nav__link_active" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="">Контакты</a>
                 </li>
             </ul>
-        </div>
-    </header> -->
+        </nav>
+        <ul class="contacts">
+            <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com">
+                    <svg class="contacts__icon" width="16" height="12">
+                        <use href="./images/sprite.svg#envelope"></use>
+                    </svg>
+                    info@devstudio.com</a>
+            </li>
+            <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380961111111">
+                    <svg class="contacts__icon" width="10" height="16">
+                        <use href="./images/sprite.svg#phone"></use>
+                    </svg> +38 096 111 11 11</a>
+            </li>
+        </ul>
+        <button type="button" class="mobile-menu-open-btn" data-menu-open>
+            <svg class="mobile-menu-open-btn__icon" width="40" height="40">
+                <use href="./images/sprite.svg#burger-icon"> </use>
+            </svg>
+        </button>
+    </div>
 
-    <!--Проекты студии
+    <div class="mobile-menu " data-menu>
+        <div class="container mobile-menu__container">
+        <button class="mobile-menu__close-btn" type="button" data-menu-close>
+            <svg class="mobile-menu-close-btn__icon" width="19" height="19">
+                <use href="./images/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__nav">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link-active" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="">Контакты</a>
+            </li>
+        </ul>
+        <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__tel">
+                <a class="mobile-menu__tel" href="tel:+380961111111"> +38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__email">
+                <a class="mobile-menu__email" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mobile-menu__social">
+            <li class="mobile-menu__social-item">
+                <a  class="mobile-menu__social-link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="">LinkedIn</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+</header>
+
+    <!--Проекты студии-->
 
     <section class="section">
         <div class="container">
@@ -97,7 +147,7 @@
                                     srcset="./images/mobile/projects/jpg/techno-mob.jpg 1x, ./images/mobile/projects/jpg/techno-mob@2x.jpg 2x"
                                     media="(max-width: 767px)" type="image/jpeg">
 
-                                <img src="./images/desktop/projects/jpg/tehno-desk.jpg" alt="макет дизайна веб-сайта"
+                                <img class="projects__img" src="./images/desktop/projects/jpg/tehno-desk.jpg" alt="макет дизайна веб-сайта"
                                     width="370" height="294" />
                             </picture>
 
@@ -139,7 +189,7 @@
                                     srcset="./images/mobile/projects/jpg/poster-mob.jpg 1x, ./images/mobile/projects/jpg/poster-mob@2x.jpg 2x"
                                     media="(max-width: 767px)" type="image/jpeg">
 
-                                <img src="./images/desktop/projects/jpg/poster-desk.jpg"
+                                <img class="projects__img" src="./images/desktop/projects/jpg/poster-desk.jpg"
                                     alt="баскетболисты из двух коман" width="370" height="294" />
                             </picture>
 
@@ -181,7 +231,7 @@
                                     srcset="./images/mobile/projects/jpg/seafood-mob.jpg 1x, ./images/mobile/projects/jpg/seafood-mob@2x.jpg 2x"
                                     media="(max-width: 767px)" type="image/jpeg">
 
-                                <img src="./images/desktop/projects/jpg/seafood-desk.jpg"
+                                <img class="projects__img" src="./images/desktop/projects/jpg/seafood-desk.jpg"
                                     alt="логотип рыбного ресторана" width="370" height="294" />
                             </picture>
 
@@ -223,7 +273,7 @@
                                     srcset="./images/mobile/projects/jpg/prime-mob.jpg 1x, ./images/mobile/projects/jpg/prime-mob@2x.jpg 2x"
                                     media="(max-width: 767px)" type="image/jpeg">
 
-                                <img src="./images/desktop/projects/jpg/prime-desk.jpg" alt="черные большие наушники"
+                                <img class="projects__img" src="./images/desktop/projects/jpg/prime-desk.jpg" alt="черные большие наушники"
                                     width="370" height="294" />
                             </picture>
 
@@ -265,7 +315,7 @@
                                     srcset="./images/mobile/projects/jpg/boxes-mob.jpg 1x, ./images/mobile/projects/jpg/boxes-mob@2x.jpg 2x"
                                     media="(max-width: 767px)" type="image/jpeg">
 
-                                <img src="./images/desktop/projects/jpg/boxes-desk.jpg"
+                                <img class="projects__img" src="./images/desktop/projects/jpg/boxes-desk.jpg"
                                     alt="два разных вида упаковочных коробок" width="370" height="294" />
                             </picture>
 
@@ -307,7 +357,7 @@
                                     srcset="./images/mobile/projects/jpg/website-mob.jpg 1x, ./images/mobile/projects/jpg/website-mob@2x.jpg 2x"
                                     media="(max-width: 767px)" type="image/jpeg">
 
-                                <img src="./images/desktop/projects/jpg/website-desk.jpg"
+                                <img class="projects__img" src="./images/desktop/projects/jpg/website-desk.jpg"
                                     alt="монитор компании Эпл с програмойна экране" width="370" height="294" />
                             </picture>
 
@@ -349,7 +399,7 @@
                                     srcset="./images/mobile/projects/jpg/limited-mob.jpg 1x, ./images/mobile/projects/jpg/limited-mob@2x.jpg 2x"
                                     media="(max-width: 767px)" type="image/jpeg">
 
-                                <img src="./images/desktop/projects/jpg/limited-desk.jpg" alt="разворот журнала"
+                                <img class="projects__img" src="./images/desktop/projects/jpg/limited-desk.jpg" alt="разворот журнала"
                                     width="370" height="294" />
                             </picture>
 
@@ -391,7 +441,7 @@
                                     srcset="./images/mobile/projects/jpg/lab-mob.jpg 1x, ./images/mobile/projects/jpg/lab-mob@2x.jpg 2x"
                                     media="(max-width: 767px)" type="image/jpeg">
 
-                                <img src="./images/desktop/projects/jpg/lab-desk.jpg" alt="бирка компании ЛАБ"
+                                <img class="projects__img" src="./images/desktop/projects/jpg/lab-desk.jpg" alt="бирка компании ЛАБ"
                                     width="370" height="294" />
                             </picture>
 
@@ -433,7 +483,7 @@
                                     srcset="./images/mobile/projects/jpg/growing-mob.jpg 1x, ./images/mobile/projects/jpg/growing-mob@2x.jpg 2x"
                                     media="(max-width: 767px)" type="image/jpeg">
 
-                                <img src="./images/desktop/projects/jpg/growing-desk.jpg"
+                                <img class="projects__img" src="./images/desktop/projects/jpg/growing-desk.jpg"
                                     alt="ноутбук с открытым приложением Растущий Бизнес " width="370" height="294" />
                             </picture>
 
@@ -449,13 +499,13 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section> 
 
-    <!--Контакты студии
+    <!--Контакты студии-->
 
     <footer class="footer">
         <div class="footer__container container">
-            <div>
+            <div class="footer__info">
                 <a class="footer__logo logo" href="./index.html" lang="en">
                     <span>Web</span><span class="logo__light">Studio</span></a>
                 <address>
@@ -523,7 +573,7 @@
                 </span>
             </form>
         </div>
-    </footer> -->
+    </footer> 
 </body>
 
 <script src="./js/mobile-menu.js"></script>

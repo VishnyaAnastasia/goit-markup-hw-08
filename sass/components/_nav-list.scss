@@ -3,13 +3,11 @@
 
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
     .nav {
         display: flex;
-    }
-
-    .nav__item:not(:last-child) {
-        margin-right: 50px;
+        gap: 50px;
+        margin-right: 84px;
     }
 
     .nav__link {
